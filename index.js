@@ -11,12 +11,16 @@ const url = "mongodb://localhost:27017";
 const dbName = "ocean_bancodados_18_11_2021";
 
 async function main() {
+    /*
     const client = await MongoClient.connect(url);
 
     const db = client.db(dbName);
 
     const collection = db.collection("herois");
+    
+    */
 
+    const collection = undefined;
     const app = express();
 
     // Informando para o Express considerar o corpo da requisição
