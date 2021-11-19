@@ -13,14 +13,12 @@ const dbName = "ocean_bancodados_18_11_2021";
 async function main() {
     /*
     const client = await MongoClient.connect(url);
-
     const db = client.db(dbName);
-
     const collection = db.collection("herois");
-    
     */
 
     const collection = undefined;
+
     const app = express();
 
     // Informando para o Express considerar o corpo da requisição
@@ -93,7 +91,12 @@ async function main() {
         res.send("Registro removido com sucesso.");
     });
 
-    app.listen(3000);
+    app.listen(process.env.PORT || 3000);
 }
 
 main();
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+S
